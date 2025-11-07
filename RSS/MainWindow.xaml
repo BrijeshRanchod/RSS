@@ -3,10 +3,89 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:RSSPOS"
+        xmlns:vm="clr-namespace:RSSPOS.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Point of Sale" Height="600" Width="980"
+        Language="en-ZA">
+    <Window.DataContext>
+        <vm:PosViewModel/>
+    </Window.DataContext>
 
+    <Grid Background="#FAFAFA" Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Point of Sale" FontSize="22" FontWeight="Bold" Margin="0,0,0,16"/>
+
+        <!-- Sales person -->
+        <StackPanel Grid.Row="0" Margin="0,40,0,12" Orientation="Horizontal">
+            <TextBlock Text="Sales Person" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <ComboBox Width="260"
+            ItemsSource="{Binding SalesPeople}"
+            SelectedItem="{Binding SelectedSalesPerson}"
+            DisplayMemberPath="Person"/>
+        </StackPanel>
+
+
+        <!-- Lines -->
+        <DataGrid Grid.Row="1"
+                  ItemsSource="{Binding Lines}"
+                  AutoGenerateColumns="False"
+                  CanUserAddRows="False"
+                  HeadersVisibility="Column"
+                  RowHeaderWidth="0"
+                  Margin="0,8,0,8">
+            <DataGrid.Columns>
+                <!-- Service -->
+                <DataGridTemplateColumn Header="Service" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ComboBox ItemsSource="{Binding DataContext.Services, RelativeSource={RelativeSource AncestorType=Window}}"
+                                      SelectedItem="{Binding Service, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                      DisplayMemberPath="Name"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <!-- Qty -->
+                <DataGridTextColumn Header="Qty" Width="90"
+                                    Binding="{Binding Quantity, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+                <!-- Unit Price (readonly) -->
+                <DataGridTextColumn Header="Unit Price" Width="140"
+                                    IsReadOnly="True"
+                                    Binding="{Binding UnitPrice, StringFormat={}{0:C}}"/>
+
+                <!-- Line Total -->
+                <DataGridTextColumn Header="Line Total" Width="140"
+                                    IsReadOnly="True"
+                                    Binding="{Binding LineTotal, StringFormat={}{0:C}}"/>
+
+                <!-- Remove -->
+                <DataGridTemplateColumn Header="" Width="60">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="x"
+                                    Command="{Binding DataContext.RemoveLineCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                                    CommandParameter="{Binding}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Footer -->
+        <DockPanel Grid.Row="2" LastChildFill="False">
+            <TextBlock DockPanel.Dock="Left" Text="Total:" Margin="0,0,8,0" VerticalAlignment="Center" FontWeight="Bold"/>
+            <TextBlock DockPanel.Dock="Left" Text="{Binding GrandTotal, StringFormat={}{0:C}}" VerticalAlignment="Center" FontWeight="Bold"/>
+
+            <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" Margin="8">
+                <Button Content="+ Add Line" Command="{Binding AddLineCommand}"/>
+                <Button Content="Save Sale" Command="{Binding SaveSaleCommand}"/>
+            </StackPanel>
+        </DockPanel>
     </Grid>
 </Window>
