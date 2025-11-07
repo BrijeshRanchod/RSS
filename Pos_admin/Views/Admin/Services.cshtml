@@ -1,0 +1,66 @@
+@model IEnumerable<Pos.Models.Service>
+@{
+    ViewData["Title"] = "Manage Services";
+    var openCreate = ViewData["InlineCreateError"] as bool? == true; // open if server sent back validation errors
+}
+<h1>Services</h1>
+
+@if (TempData["Success"] is string ok)
+{
+  <div class="alert alert-success">@ok</div>
+}
+
+<div class="card mb-4">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <strong>Add Service</strong>
+    <button class="btn btn-sm btn-outline-secondary" type="button"
+            data-bs-toggle="collapse" data-bs-target="#createServiceCollapse" aria-expanded="@(openCreate ? "true" : "false")">
+      @((openCreate ? "Hide" : "Show"))
+    </button>
+  </div>
+  <div id="createServiceCollapse" class="collapse @(openCreate ? "show" : "")">
+    <div class="card-body">
+      <form asp-action="CreateService" asp-controller="Admin" method="post" class="row g-3">
+        <div class="col-md-6">
+          <label for="Name" class="form-label">Name</label>
+          <input name="Name" id="Name" class="form-control" />
+          @* If your Service model has DataAnnotations, you can use: <span asp-validation-for="Name" class="text-danger"></span> 
+             but since the model here is IEnumerable<Service>, we show a summary below *@
+        </div>
+        <div class="col-md-3">
+          <label for="Price" class="form-label">Price</label>
+          <input name="Price" id="Price" class="form-control" type="number" step="0.01" />
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary">Create</button>
+        </div>
+      </form>
+      <div class="mt-2">
+        @* Validation summary for the inline create (when ModelState invalid) *@
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr><th>Name</th><th>Price</th><th class="text-end"></th></tr>
+  </thead>
+  <tbody>
+@foreach (var s in Model)
+{
+  <tr>
+    <td>@s.Name</td>
+    <td>@s.Price.ToString("C")</td>
+    <td class="text-end">
+      <a class="btn btn-sm btn-outline-primary" asp-controller="Admin" asp-action="EditService" asp-route-id="@s.Id">Edit</a>
+    </td>
+  </tr>
+}
+  </tbody>
+</table>
+
+@section Scripts{
+  <partial name="_ValidationScriptsPartial" />
+}

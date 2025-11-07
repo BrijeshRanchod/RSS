@@ -1,0 +1,70 @@
+@model IEnumerable<Pos.Models.Sale>
+@{
+    ViewData["Title"] = "Admin – Sales";
+    var total = (int?)ViewBag.Total ?? Model.Count();
+    var page = (int?)ViewBag.Page ?? 1;
+    var pageSize = (int?)ViewBag.PageSize ?? 25;
+    var q = (string?)ViewBag.Query;
+}
+
+<h1>Sales</h1>
+
+@if (TempData["Success"] is string ok)
+{
+  <div class="alert alert-success">@ok</div>
+}
+
+<form method="get" class="mb-3 d-flex gap-2">
+  <input name="q" value="@q" class="form-control" placeholder="Search by salesperson or item..." />
+  <button class="btn btn-primary">Search</button>
+</form>
+
+<table class="table table-striped align-middle">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Date</th>
+      <th>Sales Person</th>
+      <th>Items</th>
+      <th>Total</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+@foreach (var s in Model)
+{
+    var totalAmt = s.Lines?.Sum(l => l.Quantity * l.UnitPrice) ?? 0m;
+    <tr>
+      <td>@s.Id</td>
+      <td>@s.SaleDate.ToString("yyyy-MM-dd HH:mm")</td>
+      <td>@s.SalesPerson</td>
+      <td>
+        @foreach (var l in s.Lines)
+        {
+          <div>@l.Quantity × @l.Service?.Name (@l.UnitPrice.ToString("C"))</div>
+        }
+      </td>
+      <td>@totalAmt.ToString("C")</td>
+      <td class="text-nowrap">
+        <a class="btn btn-sm btn-outline-primary" asp-controller="Admin" asp-action="EditSale" asp-route-id="@s.Id">Edit</a>
+        <form asp-controller="Admin" asp-action="DeleteSale" asp-route-id="@s.Id" method="post" class="d-inline">
+          <button class="btn btn-sm btn-outline-danger" onclick="return confirm('Delete sale #@s.Id?');">Delete</button>
+        </form>
+      </td>
+    </tr>
+}
+  </tbody>
+</table>
+
+<div class="d-flex justify-content-between align-items-center">
+  <div class="text-muted">Showing page , size @pageSize — Total: @total</div>
+  <div>
+    @if (page > 1)
+    {
+      <a class="btn btn-sm btn-light" asp-action="Index" asp-route-q="@q" asp-route-page="@(page-1)" asp-route-pageSize="@pageSize">&laquo; Prev</a>
+    }
+    <a class="btn btn-sm btn-light" asp-action="Index" asp-route-q="@q" asp-route-page="@(page+1)" asp-route-pageSize="@pageSize">Next &raquo;</a>
+  </div>
+</div>
+
+<hr />

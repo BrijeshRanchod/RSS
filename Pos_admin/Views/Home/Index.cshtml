@@ -1,0 +1,226 @@
+﻿@model Pos.Controllers.PosViewModel
+@using System.Text.Json
+@{
+    var json = JsonSerializer.Serialize(
+        Model.Services,
+        new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase }
+    );
+}
+
+
+@{
+    ViewData["Title"] = "Point of Sale";
+    var za = System.Globalization.CultureInfo.GetCultureInfo("en-ZA");
+}
+
+<h1>Point of Sale</h1>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+<form asp-action="CreateSale" method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="mb-3">
+        <label class="form-label">Sales Person</label>
+        <select asp-for="SalesPersonId" class="form-select svc">
+            <option value="">--Select--</option>
+            @foreach (var sp in Model.SalesPeople)
+            {
+                <option value="@sp.Id">
+                    @sp.Person
+            </option>
+            }
+        </select>
+        @Html.ValidationMessage("SalesPerson", new { @class = "text-danger" })
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th style="width:40%">Service</th>
+                <th style="width:10%">Qty</th>
+                <th style="width:20%">Unit Price</th>
+                <th style="width:20%">Line Total</th>
+                <th style="width:10%"></th>
+            </tr>
+        </thead>
+        <tbody id="linesBody">
+        @for (int i = 0; i < Model.Lines.Count; i++)
+        {
+            <tr>
+                <td>
+                    <select class="form-select svc"
+                            name="Lines[@i].ServiceId"
+                            data-index="@i">
+                        <option value="">-- select --</option>
+                       @foreach (var s in Model.Services)
+{
+    <option value="@s.Id" selected="@(Model.Lines[i].ServiceId == s.Id)">
+        @s.Name
+    </option>
+}
+
+                    </select>
+                </td>
+                <td>
+                    <input type="number" min="1" class="form-control qty"
+                           name="Lines[@i].Quantity"
+                           value="@Model.Lines[i].Quantity"
+                           data-index="@i" />
+                </td>
+<td>
+  <input type="text" class="form-control price"
+         value="@Model.Lines[i].UnitPrice.ToString("0.00", za)"
+         data-index="@i" readonly />
+</td>
+
+                <td class="linetotal" data-index="@i">
+                    @((Model.Lines[i].Quantity * Model.Lines[i].UnitPrice).ToString("C", za))
+                </td>
+                <td>
+                    <button type="button" class="btn btn-sm btn-outline-danger remove">x</button>
+                </td>
+            </tr>
+        }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="text-end fw-bold">Total:</td>
+                <td id="grandTotal" class="fw-bold">
+                    @Model.GrandTotal.ToString("C", za)
+                </td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="d-flex gap-2">
+        <button type="button" id="addLine" class="btn btn-secondary">+ Add Line</button>
+        <button type="submit" class="btn btn-primary">Save Sale</button>
+    </div>
+</form>
+
+@section Scripts {
+<script>
+(function() {
+  const zaFmt = new Intl.NumberFormat('en-ZA', { style: 'currency', currency: 'ZAR' });
+
+  // Services from server (camelCase: id, name, price)
+  const services = @Html.Raw(json);
+  const serviceMap = new Map(services.map(s => [String(s.id), s])); // quick lookup
+  const serviceOptionsHtml =
+    '<option value="">-- select --</option>' +
+    services.map(s => `<option value="${s.id}">${s.name}</option>`).join('');
+
+  function parseDec(v) {
+    if (!v) return 0;
+    return Number(String(v).replace(/[^0-9.\-]/g,'')) || 0;
+  }
+
+  function setPriceFromService(tr) {
+    const svc = tr.querySelector('.svc');
+    const price = tr.querySelector('.price');
+    const svcId = svc?.value || "";
+    const svcObj = serviceMap.get(svcId);
+    const p = svcObj ? Number(svcObj.price) : 0;
+    price.value = p.toFixed(2);
+  }
+
+  function recalcRow(tr) {
+    const qty = parseInt(tr.querySelector('.qty').value || '1', 10);
+    const price = parseDec(tr.querySelector('.price').value);
+    tr.querySelector('.linetotal').textContent = zaFmt.format(qty * price);
+  }
+
+  function recalcTotal() {
+    let total = 0;
+    document.querySelectorAll('#linesBody tr').forEach(tr => {
+      const qty = parseInt(tr.querySelector('.qty').value || '1', 10);
+      const price = parseDec(tr.querySelector('.price').value);
+      total += qty * price;
+    });
+    const gt = document.getElementById('grandTotal');
+    if (gt) gt.textContent = zaFmt.format(total);
+  }
+
+  function wireRow(tr) {
+    const svc = tr.querySelector('.svc');
+    const qty = tr.querySelector('.qty');
+    const price = tr.querySelector('.price');
+    const removeBtn = tr.querySelector('.remove');
+
+    // When service changes, pull price from map (no roundtrip needed)
+    svc.addEventListener('change', () => {
+      setPriceFromService(tr);
+      recalcRow(tr);
+      recalcTotal();
+    });
+
+    qty.addEventListener('input', () => {
+      if (qty.value < 1) qty.value = 1;
+      recalcRow(tr);
+      recalcTotal();
+    });
+
+    // price is readonly; no input handler needed, but keep for safety if you ever toggle it
+    price.addEventListener('input', () => { recalcRow(tr); recalcTotal(); });
+
+    removeBtn.addEventListener('click', () => { tr.remove(); recalcTotal(); });
+  }
+
+  // Initialize all existing rows: set price from service & wire
+  function initPrices() {
+    document.querySelectorAll('#linesBody tr').forEach(tr => {
+      setPriceFromService(tr);
+      recalcRow(tr);
+    });
+    recalcTotal();
+  }
+
+  document.querySelectorAll('#linesBody tr').forEach(wireRow);
+  initPrices();
+
+  // Add new row
+  document.getElementById('addLine').addEventListener('click', () => {
+    const i = document.querySelectorAll('#linesBody tr').length;
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>
+        <select class="form-select svc" name="Lines[${i}].ServiceId" data-index="${i}">
+          ${serviceOptionsHtml}
+        </select>
+      </td>
+      <td>
+        <input type="number" min="1" class="form-control qty"
+               name="Lines[${i}].Quantity" value="1" data-index="${i}" />
+      </td>
+      <td>
+        <input type="text" class="form-control price" value="0.00" data-index="${i}" readonly />
+      </td>
+      <td class="linetotal" data-index="${i}">${zaFmt.format(0)}</td>
+      <td><button type="button" class="btn btn-sm btn-outline-danger remove">x</button></td>
+    `;
+    document.getElementById('linesBody').appendChild(tr);
+    wireRow(tr);
+    // no service selected yet, totals remain 0 until user picks one
+  });
+
+  // Prevent double-submit and ensure prices are set before posting
+  const form = document.querySelector('form[asp-action="CreateSale"]') || document.querySelector('form');
+  const saveBtn = document.querySelector('button[type="submit"].btn-primary');
+  if (form) {
+    form.addEventListener('submit', () => {
+      if (saveBtn) {
+        saveBtn.disabled = true;
+        saveBtn.textContent = 'Saving...';
+      }
+      // Ensure all rows have price values based on selected service
+      document.querySelectorAll('#linesBody tr').forEach(tr => setPriceFromService(tr));
+    });
+  }
+})();
+</script>
+}
