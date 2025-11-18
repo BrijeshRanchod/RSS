@@ -48,60 +48,54 @@ public class HomeController : Controller
     }
 
     // ---------------- POST: /Home/CreateSale ----------------
-[HttpPost]
-[ValidateAntiForgeryToken]
-public async Task<IActionResult> CreateSale(PosViewModel? model)
-{
-    if (model is null)
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> CreateSale(PosViewModel? model)
     {
-        ModelState.AddModelError("", "Invalid submission.");
-        model = new PosViewModel();
-    }
-
-    if (string.IsNullOrWhiteSpace(model.SalesPersonId))
-        ModelState.AddModelError(nameof(model.SalesPersonId), "Sales person is required.");
-
-    var lines = model.Lines ?? new List<SaleLineInput>();
-    var validLines = lines.Where(l => l.ServiceId.HasValue && l.Quantity > 0).ToList();
-
-    if (validLines.Count == 0)
-        ModelState.AddModelError("", "Add at least one service line.");
-
-    if (!ModelState.IsValid)
-    {
-        model.Services = await _db.Services.OrderBy(s => s.Name).ToListAsync();
-        return View("Index", model);
-    }
-
-    var priceMap = await _db.Services.ToDictionaryAsync(s => s.Id, s => s.Price);
-
-    var sale = new Sale
-    {
-        SalesPerson = model.SalesPersonId!,
-        SaleDate = DateTime.Now,
-        Lines = validLines.Select(l => new SaleLine
+        if (model is null)
         {
-            ServiceId = l.ServiceId!.Value,
-            Quantity  = l.Quantity,
-            UnitPrice = priceMap.TryGetValue(l.ServiceId!.Value, out var p) ? p : 0m
-        }).ToList()
-    };
+            ModelState.AddModelError("", "Invalid submission.");
+            model = new PosViewModel();
+        }
 
-    _db.Sales.Add(sale);
-    await _db.SaveChangesAsync();
+        if (string.IsNullOrWhiteSpace(model.SalesPersonId))
+            ModelState.AddModelError(nameof(model.SalesPersonId), "Sales person is required.");
 
-    // Back to POS screen with a fresh form
-    var newVm = new PosViewModel
-    {
-        Services = await _db.Services.OrderBy(s => s.Name).ToListAsync(),
-        Lines = new List<SaleLineInput> { new() },
-        SalesPersonId = ""
-    };
+        var lines = model.Lines ?? new List<SaleLineInput>();
+        var validLines = lines.Where(l => l.ServiceId.HasValue && l.Quantity > 0).ToList();
 
-    ViewBag.Success = $"Sale #{sale.Id} recorded.";
-    return View("Index", newVm);
-}
+        if (validLines.Count == 0)
+            ModelState.AddModelError("", "Add at least one service line.");
 
+        if (!ModelState.IsValid)
+        {
+            model.Services = await _db.Services.OrderBy(s => s.Name).ToListAsync();
+            model.SalesPeople = await _db.SalesPeople.OrderBy(sp => sp.Person).ToListAsync();
+            return View("Index", model);
+        }
+
+        var priceMap = await _db.Services.ToDictionaryAsync(s => s.Id, s => s.Price);
+
+        var sale = new Sale
+        {
+            SalesPerson = model.SalesPersonId!,
+            SaleDate = DateTime.Now,
+            Lines = validLines.Select(l => new SaleLine
+            {
+                ServiceId = l.ServiceId!.Value,
+                Quantity = l.Quantity,
+                UnitPrice = priceMap.TryGetValue(l.ServiceId!.Value, out var p) ? p : 0m
+            }).ToList()
+        };
+
+        _db.Sales.Add(sale);
+        await _db.SaveChangesAsync();
+
+        TempData["Success"] = $"Sale #{sale.Id} recorded.";
+
+        // ?? Redirect so GET /Index rebuilds the VM properly
+        return RedirectToAction(nameof(Index));
+    }
 
     // ---------------- GET: /Home/Price/{id} ----------------
     [HttpGet]

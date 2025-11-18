@@ -14,16 +14,7 @@
 }
 
 <h1>Sales</h1>
-<div class="mb-3 float-lg-end">
-    <a class="btn btn-outline-dark"
-       asp-action="ExportSalesPdf"
-       asp-route-q="@q"
-       asp-route-startDate="@startDateVal"
-       asp-route-endDate="@endDateVal"
-       asp-route-pageSize="@pageSize">
-        Export PDF (current view)
-    </a>
-</div>
+
 
 @if (TempData["Success"] is string ok)
 {
@@ -35,18 +26,31 @@
     <label class="form-label">Search</label>
     <input name="q" value="@q" class="form-control" placeholder="Search by salesperson or item..." />
   </div>
-  <div class="col-sm-3">
-    <label class="form-label">Start date</label>
-    <input type="date" name="startDate" value="@startDateVal" class="form-control" />
-  </div>
-  <div class="col-sm-3">
-    <label class="form-label">End date</label>
-    <input type="date" name="endDate" value="@endDateVal" class="form-control" />
-  </div>
-  <div class="col-sm-2 d-flex gap-2">
+    @if (User.IsInRole("Admin"))
+        {
+            <div class="col-sm-3">
+                <label class="form-label">Start date</label>
+                <input type="date" name="startDate" value="@startDateVal" class="form-control" />
+            </div>
+            <div class="col-sm-3">
+                <label class="form-label">End date</label>
+                <input type="date" name="endDate" value="@endDateVal" class="form-control" />
+            </div>
+        }
+        <div class="col-sm-2 d-flex gap-2">
     <button class="btn btn-primary flex-grow-1">Apply</button>
     <a class="btn btn-outline-secondary" asp-action="Index">Clear</a>
   </div>
+    <div class="col-sm-3 d-flex gap-2">
+        <a class="btn btn-outline-dark"
+           asp-action="ExportSalesPdf"
+           asp-route-q="@q"
+           asp-route-startDate="@startDateVal"
+           asp-route-endDate="@endDateVal"
+           asp-route-pageSize="@pageSize">
+            Download
+        </a>
+    </div>
 </form>
 
 

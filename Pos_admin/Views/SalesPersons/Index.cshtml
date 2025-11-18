@@ -37,15 +37,20 @@
                     @Html.DisplayFor(modelItem => item.Role)
             </td>
             <td>
+                @if (User.IsInRole("Admin")){
                     <button class="btn btn-primary">
                         <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary text-white text-decoration-none">Edit</a>
                     </button>
+                }
                 <button class="btn btn-info">
                         <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info text-white text-decoration-none">Details</a>
                 </button>
-                <button class="btn btn-danger">
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <button class="btn btn-danger">
                     <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger text-white text-decoration-none">Delete</a>
                 </button>
+                }
             </td>
 
         </tr>
