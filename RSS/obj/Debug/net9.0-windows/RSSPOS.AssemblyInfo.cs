@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RSSPOS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aae9d6a72414564c881d7c0332f1b9b4ec136d8b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d232fc529a60b0fb87b7b29c57cb66d3815ca726")]
 [assembly: System.Reflection.AssemblyProductAttribute("RSSPOS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RSSPOS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

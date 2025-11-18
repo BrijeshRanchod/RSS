@@ -1,23 +1,55 @@
 @model IEnumerable<Pos.Models.Sale>
+@using System.Globalization;
+
 @{
     ViewData["Title"] = "Admin – Sales";
     var total = (int?)ViewBag.Total ?? Model.Count();
+    var southAfricaCulture = CultureInfo.GetCultureInfo("en-ZA");
+    decimal grandTotal = Model.Sum(s => (s.Lines?.Sum(l => l.Quantity * l.UnitPrice) ?? 0m));
     var page = (int?)ViewBag.Page ?? 1;
     var pageSize = (int?)ViewBag.PageSize ?? 25;
     var q = (string?)ViewBag.Query;
+    var startDateVal = (string?)ViewBag.StartDate;
+    var endDateVal   = (string?)ViewBag.EndDate;
 }
 
 <h1>Sales</h1>
+<div class="mb-3 float-lg-end">
+    <a class="btn btn-outline-dark"
+       asp-action="ExportSalesPdf"
+       asp-route-q="@q"
+       asp-route-startDate="@startDateVal"
+       asp-route-endDate="@endDateVal"
+       asp-route-pageSize="@pageSize">
+        Export PDF (current view)
+    </a>
+</div>
 
 @if (TempData["Success"] is string ok)
 {
   <div class="alert alert-success">@ok</div>
 }
 
-<form method="get" class="mb-3 d-flex gap-2">
-  <input name="q" value="@q" class="form-control" placeholder="Search by salesperson or item..." />
-  <button class="btn btn-primary">Search</button>
+<form method="get" class="mb-3 row g-2 align-items-end">
+  <div class="col-sm-4">
+    <label class="form-label">Search</label>
+    <input name="q" value="@q" class="form-control" placeholder="Search by salesperson or item..." />
+  </div>
+  <div class="col-sm-3">
+    <label class="form-label">Start date</label>
+    <input type="date" name="startDate" value="@startDateVal" class="form-control" />
+  </div>
+  <div class="col-sm-3">
+    <label class="form-label">End date</label>
+    <input type="date" name="endDate" value="@endDateVal" class="form-control" />
+  </div>
+  <div class="col-sm-2 d-flex gap-2">
+    <button class="btn btn-primary flex-grow-1">Apply</button>
+    <a class="btn btn-outline-secondary" asp-action="Index">Clear</a>
+  </div>
 </form>
+
+
 
 <table class="table table-striped align-middle">
   <thead>
@@ -27,7 +59,9 @@
       <th>Sales Person</th>
       <th>Items</th>
       <th>Total</th>
-      <th></th>
+      @if (User.IsInRole("Admin")){
+      <th>Actions</th>
+            }
     </tr>
   </thead>
   <tbody>
@@ -41,30 +75,48 @@
       <td>
         @foreach (var l in s.Lines)
         {
-          <div>@l.Quantity × @l.Service?.Name (@l.UnitPrice.ToString("C"))</div>
+          <div>@l.Quantity × @l.Service?.Name (@l.UnitPrice.ToString("C", southAfricaCulture))</div>
         }
       </td>
-      <td>@totalAmt.ToString("C")</td>
+      <td>@totalAmt.ToString("C", southAfricaCulture)</td>
+      @if (User.IsInRole("Admin")){
       <td class="text-nowrap">
         <a class="btn btn-sm btn-outline-primary" asp-controller="Admin" asp-action="EditSale" asp-route-id="@s.Id">Edit</a>
         <form asp-controller="Admin" asp-action="DeleteSale" asp-route-id="@s.Id" method="post" class="d-inline">
           <button class="btn btn-sm btn-outline-danger" onclick="return confirm('Delete sale #@s.Id?');">Delete</button>
         </form>
       </td>
+      }
     </tr>
 }
   </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="4" class="text-end fw-bold">Total of current sales:</td>
+      <td class="fw-bold">@grandTotal.ToString("C", southAfricaCulture)</td>
+      <td></td>
+    </tr>
+  </tfoot>
 </table>
 
 <div class="d-flex justify-content-between align-items-center">
-  <div class="text-muted">Showing page , size @pageSize — Total: @total</div>
   <div>
     @if (page > 1)
     {
-      <a class="btn btn-sm btn-light" asp-action="Index" asp-route-q="@q" asp-route-page="@(page-1)" asp-route-pageSize="@pageSize">&laquo; Prev</a>
+      <a class="btn btn-sm btn-light"
+         asp-action="Index"
+         asp-route-q="@q"
+         asp-route-startDate="@startDateVal"
+         asp-route-endDate="@endDateVal"
+         asp-route-page="@(page-1)"
+         asp-route-pageSize="@pageSize">&laquo; Prev</a>
     }
-    <a class="btn btn-sm btn-light" asp-action="Index" asp-route-q="@q" asp-route-page="@(page+1)" asp-route-pageSize="@pageSize">Next &raquo;</a>
+    <a class="btn btn-sm btn-light"
+       asp-action="Index"
+       asp-route-q="@q"
+       asp-route-startDate="@startDateVal"
+       asp-route-endDate="@endDateVal"
+       asp-route-page="@(page+1)"
+       asp-route-pageSize="@pageSize">Next &raquo;</a>
   </div>
 </div>
-
-<hr />

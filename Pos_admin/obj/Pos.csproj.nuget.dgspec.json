@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brije\\Desktop\\Code\\CS\\Pos_admin\\Pos.csproj": {}
+    "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Pos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brije\\Desktop\\Code\\CS\\Pos_admin\\Pos.csproj": {
+    "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Pos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brije\\Desktop\\Code\\CS\\Pos_admin\\Pos.csproj",
+        "projectUniqueName": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Pos.csproj",
         "projectName": "Pos",
-        "projectPath": "C:\\Users\\brije\\Desktop\\Code\\CS\\Pos_admin\\Pos.csproj",
+        "projectPath": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Pos.csproj",
         "packagesPath": "C:\\Users\\brije\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brije\\Desktop\\Code\\CS\\Pos_admin\\obj\\",
+        "outputPath": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -54,6 +54,10 @@
             "DotNetEnv": {
               "target": "Package",
               "version": "[3.1.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.10, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -90,6 +94,10 @@
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2025.7.4, )"
             }
           },
           "imports": [
@@ -111,7 +119,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

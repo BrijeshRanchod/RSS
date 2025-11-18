@@ -4,9 +4,10 @@ using Microsoft.EntityFrameworkCore;
 using Pos.Models;
 using Pos.Data;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Pos.Controllers;
-
+[Authorize]
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;

@@ -24,27 +24,31 @@
     @Html.AntiForgeryToken()
 
     <div class="mb-3">
-        <label class="form-label">Sales Person</label>
+        <label asp-for="SalesPersonId" class="form-label">Sales Person</label>
         <select asp-for="SalesPersonId" class="form-select svc">
-            <option value="">--Select--</option>
+            <option value="">-- Select sales person --</option>
             @foreach (var sp in Model.SalesPeople)
             {
-                <option value="@sp.Id">
+                <option value="@sp.Person">
                     @sp.Person
-            </option>
+                </option>
             }
         </select>
-        @Html.ValidationMessage("SalesPerson", new { @class = "text-danger" })
+        <span asp-validation-for="SalesPersonId" class="text-danger"></span>
     </div>
+
 
     <table class="table">
         <thead>
             <tr>
-                <th style="width:40%">Service</th>
+                <th style="width:30%">Service</th>
                 <th style="width:10%">Qty</th>
                 <th style="width:20%">Unit Price</th>
                 <th style="width:20%">Line Total</th>
-                <th style="width:10%"></th>
+                <th style="width:10%">Remove</th>
+                <th style="width:10%">
+                    <button type="button" id="addLine" class="btn btn-success">Add Item</button>
+                </th>
             </tr>
         </thead>
         <tbody id="linesBody">
@@ -83,6 +87,8 @@
                 <td>
                     <button type="button" class="btn btn-sm btn-outline-danger remove">x</button>
                 </td>
+                <td>
+                </td>
             </tr>
         }
         </tbody>
@@ -93,13 +99,14 @@
                     @Model.GrandTotal.ToString("C", za)
                 </td>
                 <td></td>
+                <td></td>
             </tr>
         </tfoot>
     </table>
 
     <div class="d-flex gap-2">
-        <button type="button" id="addLine" class="btn btn-secondary">+ Add Line</button>
-        <button type="submit" class="btn btn-primary">Save Sale</button>
+        
+        <button type="submit" class="btn btn-primary">Confirm Sale</button>
     </div>
 </form>
 
@@ -202,6 +209,7 @@
       </td>
       <td class="linetotal" data-index="${i}">${zaFmt.format(0)}</td>
       <td><button type="button" class="btn btn-sm btn-outline-danger remove">x</button></td>
+      <td></td>
     `;
     document.getElementById('linesBody').appendChild(tr);
     wireRow(tr);

@@ -1,22 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Pos.Data;
 using Pos.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Pos.Controllers
 {
     public class SalesPersonsController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly UserManager<IdentityUser> _users;
+        private readonly RoleManager<IdentityRole> _roles;
 
-        public SalesPersonsController(AppDbContext context)
+        public SalesPersonsController(AppDbContext context,
+                                   UserManager<IdentityUser> users,
+                                  RoleManager<IdentityRole> roles)
         {
             _context = context;
+            _users = users;
+            _roles = roles;
         }
 
         // GET: SalesPersons
@@ -48,22 +55,71 @@ namespace Pos.Controllers
         {
             return View();
         }
+        private async Task EnsureIdentityUserAndRoleAsync(SalesPerson sp)
+        {
+            if (string.IsNullOrWhiteSpace(sp.Email)) return;
+
+            // Ensure Identity roles exist
+            foreach (var r in new[] { "Admin", "Manager", "Sales" })
+                if (!await _roles.RoleExistsAsync(r))
+                    await _roles.CreateAsync(new IdentityRole(r));
+
+            // Create or find user
+            var user = sp.IdentityUserId != null
+                ? await _users.FindByIdAsync(sp.IdentityUserId)
+                : await _users.FindByEmailAsync(sp.Email);
+
+            if (user is null)
+            {
+                user = new IdentityUser { UserName = sp.Email, Email = sp.Email, EmailConfirmed = true };
+                var create = await _users.CreateAsync(user, "ICNails2025!"); // temp; reset later
+                if (!create.Succeeded) return;
+            }
+
+            // Link back if not linked
+            if (sp.IdentityUserId != user.Id)
+            {
+                sp.IdentityUserId = user.Id;
+                _context.Update(sp);
+                await _context.SaveChangesAsync();
+            }
+
+            var desired = sp.Role switch
+            {
+                SalesRole.Admin => "Admin",
+                SalesRole.Manager => "Manager",
+                _ => "Sales"
+            };
+
+            // Ensure user is in desired role and not in the others
+            foreach (var r in new[] { "Admin", "Manager", "Sales" })
+            {
+                var inRole = await _users.IsInRoleAsync(user, r);
+                if (r == desired && !inRole) await _users.AddToRoleAsync(user, r);
+                if (r != desired && inRole) await _users.RemoveFromRoleAsync(user, r);
+            }
+        }
 
         // POST: SalesPersons/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Person,Email")] SalesPerson salesPerson)
+        public async Task<IActionResult> Create([Bind("Person,Email,Role")] SalesPerson salesPerson)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(salesPerson);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(salesPerson);
+            if (!ModelState.IsValid) return View(salesPerson);
+
+            _context.Add(salesPerson);
+            await _context.SaveChangesAsync();
+
+            // OPTIONAL: sync Identity role now (instead of waiting for startup sync)
+            await EnsureIdentityUserAndRoleAsync(salesPerson);
+
+            TempData["Success"] = "Staff member created.";
+            return RedirectToAction(nameof(Index));
         }
+
+
 
         // GET: SalesPersons/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -86,35 +142,27 @@ namespace Pos.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Person,Email")] SalesPerson salesPerson)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Person,Email,Role")] SalesPerson input)
         {
-            if (id != salesPerson.Id)
-            {
-                return NotFound();
-            }
+            if (id != input.Id) return NotFound();
+            if (!ModelState.IsValid) return View(input);
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(salesPerson);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!SalesPersonExists(salesPerson.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(salesPerson);
+            var entity = await _context.SalesPeople.FirstOrDefaultAsync(x => x.Id == id);
+            if (entity is null) return NotFound();
+
+            entity.Person = input.Person;
+            entity.Email = input.Email;
+            entity.Role = input.Role;
+
+            await _context.SaveChangesAsync();
+
+            // OPTIONAL: sync Identity role
+            await EnsureIdentityUserAndRoleAsync(entity);
+
+            TempData["Success"] = "Staff member updated.";
+            return RedirectToAction(nameof(Index));
         }
+
 
         // GET: SalesPersons/Delete/5
         public async Task<IActionResult> Delete(int? id)

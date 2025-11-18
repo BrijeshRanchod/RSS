@@ -15,87 +15,93 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v9.0
 build_property.RootNamespace = Pos
 build_property.RootNamespace = Pos
-build_property.ProjectDir = C:\Users\brije\Desktop\Code\CS\Pos_admin\
+build_property.ProjectDir = C:\Users\brije\Documents\GitHub\RSS\Pos_admin\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\brije\Desktop\Code\CS\Pos_admin
+build_property.MSBuildProjectDirectory = C:\Users\brije\Documents\GitHub\RSS\Pos_admin
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/brije/Desktop/Code/CS/Pos_admin/Views/Admin/EditSale.cshtml]
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/Admin/EditSale.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFNhbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brije/Desktop/Code/CS/Pos_admin/Views/Admin/EditService.cshtml]
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/Admin/EditService.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFNlcnZpY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brije/Desktop/Code/CS/Pos_admin/Views/Admin/Index.cshtml]
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brije/Desktop/Code/CS/Pos_admin/Views/Admin/Services.cshtml]
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/Admin/Services.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2VydmljZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brije/Desktop/Code/CS/Pos_admin/Views/Home/Calendar.cshtml]
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/Home/Calendar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWxlbmRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brije/Desktop/Code/CS/Pos_admin/Views/Home/Index.cshtml]
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brije/Desktop/Code/CS/Pos_admin/Views/Home/Privacy.cshtml]
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brije/Desktop/Code/CS/Pos_admin/Views/SalesPersons/Create.cshtml]
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/SalesPersons/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNQZXJzb25zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brije/Desktop/Code/CS/Pos_admin/Views/SalesPersons/Delete.cshtml]
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/SalesPersons/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNQZXJzb25zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brije/Desktop/Code/CS/Pos_admin/Views/SalesPersons/Details.cshtml]
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/SalesPersons/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNQZXJzb25zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brije/Desktop/Code/CS/Pos_admin/Views/SalesPersons/Edit.cshtml]
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/SalesPersons/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNQZXJzb25zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brije/Desktop/Code/CS/Pos_admin/Views/SalesPersons/Index.cshtml]
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/SalesPersons/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNQZXJzb25zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brije/Desktop/Code/CS/Pos_admin/Views/Shared/Error.cshtml]
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brije/Desktop/Code/CS/Pos_admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brije/Desktop/Code/CS/Pos_admin/Views/Website/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2Vic2l0ZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/brije/Desktop/Code/CS/Pos_admin/Views/_ViewImports.cshtml]
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brije/Desktop/Code/CS/Pos_admin/Views/_ViewStart.cshtml]
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/brije/Desktop/Code/CS/Pos_admin/Views/Shared/_Layout.cshtml]
+[C:/Users/brije/Documents/GitHub/RSS/Pos_admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-gyhnnxlxhp

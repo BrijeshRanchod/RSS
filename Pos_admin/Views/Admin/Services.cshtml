@@ -2,6 +2,7 @@
 @{
     ViewData["Title"] = "Manage Services";
     var openCreate = ViewData["InlineCreateError"] as bool? == true; // open if server sent back validation errors
+    var southAfricaCulture = System.Globalization.CultureInfo.GetCultureInfo("en-ZA");
 }
 <h1>Services</h1>
 
@@ -52,7 +53,7 @@
 {
   <tr>
     <td>@s.Name</td>
-    <td>@s.Price.ToString("C")</td>
+    <td>@s.Price.ToString("C", southAfricaCulture)</td>
     <td class="text-end">
       <a class="btn btn-sm btn-outline-primary" asp-controller="Admin" asp-action="EditService" asp-route-id="@s.Id">Edit</a>
     </td>
