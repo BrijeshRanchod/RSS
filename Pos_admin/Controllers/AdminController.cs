@@ -55,7 +55,7 @@ public class AdminController : Controller
         return View(items);
     }
 
-    // GET /Admin/ExportSalesPdf  (exports exactly what's on screen)
+    // GET /Admin/ExportSalesPdf  
     public async Task<IActionResult> ExportSalesPdf(string? q, DateTime? startDate, DateTime? endDate, int page = 1, int pageSize = 25)
     {
         // Reuse same filtering/paging as Index
@@ -78,7 +78,7 @@ public class AdminController : Controller
             .ToListAsync();
 
         var culture = CultureInfo.GetCultureInfo("en-ZA");
-        QuestPDF.Settings.License = LicenseType.Community; // required by QuestPDF
+        QuestPDF.Settings.License = LicenseType.Community; 
 
         var doc = Document.Create(container =>
         {
@@ -124,7 +124,7 @@ public class AdminController : Controller
                         table.Cell().Padding(5).Text(totalAmt.ToString("C", culture));
                     }
 
-                    // footer total (current page)
+                    // footer total 
                     table.Footer(f =>
                     {
                         f.Cell().ColumnSpan(4).AlignRight().Padding(5).Text("Total of current sales:");
@@ -173,7 +173,7 @@ public class AdminController : Controller
         ViewBag.PageSize = pageSize;
         ViewBag.Query = q;
 
-        return View(sales); // Views/Admin/Index.cshtml
+        return View(sales);
     }
 
     // ---------------- SALES EDIT ----------------
@@ -350,7 +350,6 @@ public class AdminController : Controller
 [HttpGet]
 public IActionResult CreateService()
 {
-    // Only used when you want to render a separate page or return validation errors to the same list view
     return View(new Service());
 }
 
@@ -361,8 +360,7 @@ public async Task<IActionResult> CreateService([Bind("Name,Price")] Service mode
 {
     if (!ModelState.IsValid)
     {
-        // If you’re using the inline form on the Services page:
-        // re-fetch list and return the Services view with errors.
+
         var services = await _db.Services.OrderBy(s => s.Name).ToListAsync();
         ViewData["InlineCreateError"] = true; // flag to re-open the form
         return View("Services", services);
