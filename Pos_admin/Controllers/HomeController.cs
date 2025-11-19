@@ -44,7 +44,7 @@ public class HomeController : Controller
         [HttpGet]
     public IActionResult Calendar()
     {
-        return View(); // looks for Views/Home/Calendar.cshtml
+        return View(); 
     }
 
     // ---------------- POST: /Home/CreateSale ----------------
@@ -93,7 +93,6 @@ public class HomeController : Controller
 
         TempData["Success"] = $"Sale #{sale.Id} recorded.";
 
-        // ?? Redirect so GET /Index rebuilds the VM properly
         return RedirectToAction(nameof(Index));
     }
 
@@ -127,8 +126,6 @@ public class HomeController : Controller
 }
 
 // ---------------- Supporting ViewModels ----------------
-// Controllers/HomeController.cs (same file, below your controller)
-// or move to a separate folder/namespace if you prefer
 
 public class PosViewModel
 {
@@ -138,7 +135,6 @@ public class PosViewModel
 
     public List<SalesPerson> SalesPeople { get; set; } = new();
 
-    // For initial render & server re-render; JS keeps it updated client-side too
     public decimal GrandTotal =>
         Lines?.Where(l => l.ServiceId.HasValue)
               .Sum(l => l.Quantity * l.UnitPrice) ?? 0m;
@@ -149,6 +145,5 @@ public class SaleLineInput
     public int? ServiceId { get; set; }
     public int Quantity { get; set; } = 1;
 
-    // Needed by the view for display/edit. The server will overwrite this on POST.
     public decimal UnitPrice { get; set; } = 0m;
 }
