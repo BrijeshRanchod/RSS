@@ -1,15 +1,13 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Pos.Data;
-using Pos.Models; // for SalesRole
+using Pos.Models; 
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Services
 builder.Services.AddDbContext<AppDbContext>(opts =>
-    opts.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))); // or UseSqlite
+    opts.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))); 
 
-// ✅ Register Identity ONCE (with options)
 builder.Services
     .AddIdentity<IdentityUser, IdentityRole>(o =>
     {
@@ -37,7 +35,6 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Migrate + seed/link Identity users & roles
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
@@ -63,7 +60,6 @@ app.MapControllerRoute(
 
 app.Run();
 
-// Define this in Program.cs (below) or move to a separate static class
 static async Task SeedAndSyncAsync(IServiceProvider sp)
 {
     var db = sp.GetRequiredService<AppDbContext>();
