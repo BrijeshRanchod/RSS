@@ -20,15 +20,14 @@ public class AdminSaleEditVm
 
     public decimal GrandTotal => Lines?.Sum(l => l.Quantity * l.UnitPrice) ?? 0m;
 
-    // Inline “commands” so we can add/remove rows without leaving the page
-    public string? Command { get; set; }       // "AddLine" | "RemoveLine"
+    public string? Command { get; set; } 
     public int? CommandIndex { get; set; }
     
 }
 
 public class AdminSaleLineVm
 {
-    public int? Id { get; set; }               // null => new line
+    public int? Id { get; set; }       
 
     [Display(Name = "Service")]
     public int? ServiceId { get; set; }
