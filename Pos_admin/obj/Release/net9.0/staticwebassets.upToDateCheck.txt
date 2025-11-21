@@ -1,7 +1,5 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
-wwwroot\images\logo.jpg
-wwwroot\images\logo.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -63,7 +61,8 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
-C:\Users\brije\Documents\GitHub\RSS\Pos_admin\wwwroot\css\site.css
+wwwroot\images\logo.png
+wwwroot\images\logo.jpg
 C:\Users\brije\Documents\GitHub\RSS\Pos_admin\wwwroot\favicon.ico
 C:\Users\brije\Documents\GitHub\RSS\Pos_admin\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\brije\Documents\GitHub\RSS\Pos_admin\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -124,4 +123,5 @@ C:\Users\brije\Documents\GitHub\RSS\Pos_admin\wwwroot\lib\jquery\dist\jquery.sli
 C:\Users\brije\Documents\GitHub\RSS\Pos_admin\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\brije\Documents\GitHub\RSS\Pos_admin\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\brije\Documents\GitHub\RSS\Pos_admin\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\brije\Documents\GitHub\RSS\Pos_admin\wwwroot\css\site.css
 C:\Users\brije\Documents\GitHub\RSS\Pos_admin\wwwroot\js\site.js

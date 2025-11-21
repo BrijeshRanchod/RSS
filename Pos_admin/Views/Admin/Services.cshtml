@@ -12,24 +12,24 @@
 }
 
 <div class="card mb-4">
-  <div class="card-header d-flex justify-content-between align-items-center">
+  <div class="card-header d-flex justify-content-between align-items-center bg-dark text-white">
     <strong>Add Service</strong>
-    <button class="btn btn-sm btn-outline-secondary" type="button"
+        <button class="btn btn-sm btn-outline-light bg-dark text-white" type="button"
             data-bs-toggle="collapse" data-bs-target="#createServiceCollapse" aria-expanded="@(openCreate ? "true" : "false")">
       @((openCreate ? "Hide" : "Show"))
     </button>
   </div>
   <div id="createServiceCollapse" class="collapse @(openCreate ? "show" : "")">
-    <div class="card-body">
+        <div class="card-body  bg-dark text-white">
       <form asp-action="CreateService" asp-controller="Admin" method="post" class="row g-3">
         <div class="col-md-6">
           <label for="Name" class="form-label">Name</label>
-          <input name="Name" id="Name" class="form-control" />
+          <input name="Name" id="Name" class="form-control bg-dark text-white" />
 
         </div>
         <div class="col-md-3">
           <label for="Price" class="form-label">Price</label>
-          <input name="Price" id="Price" class="form-control" type="number" step="0.01" />
+          <input name="Price" id="Price" class="form-control text-white bg-dark" type="number" step="0.01" />
         </div>
         <div class="col-12">
           <button class="btn btn-primary">Create</button>
@@ -43,7 +43,7 @@
   </div>
 </div>
 
-<table class="table table-striped">
+<table class="table table-striped table-dark">
   <thead>
     <tr><th>Name</th><th>Price</th><th class="text-end"></th></tr>
   </thead>

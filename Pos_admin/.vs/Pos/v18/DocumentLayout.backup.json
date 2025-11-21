@@ -3,24 +3,67 @@
   "WorkspaceRootPath": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\salespersons\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\salespersons\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\salespersons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\salespersons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\salespersons\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\salespersons\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\admin\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\admin\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\admin\\editservice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\admin\\editservice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\admin\\editsale.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\admin\\editsale.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\salespersons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\salespersons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\salespersons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\salespersons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\salespersons\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\salespersons\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\salespersons\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\salespersons\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\brije\\AppData\\Local\\Temp\\.vsdbgsrc\\7b4498bb24a543f1227d79074785810b39cafe806f222fba8f36d46984fa78df\\Migrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\models\\salesperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,14 +72,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\admin\\editsale.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\admin\\editsale.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,9 +85,6 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\brije\\AppData\\Local\\Temp\\.vsdbgsrc\\cc25e1b94d58131fa8227b046693f04ef6d0b2ad5a94c9817fe19931d9de7b39\\SqlInternalConnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\brije\\AppData\\Local\\Temp\\.vsdbgsrc\\7b4498bb24a543f1227d79074785810b39cafe806f222fba8f36d46984fa78df\\Migrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -61,28 +93,8 @@
       "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\salespersons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\salespersons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\models\\auth\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:models\\auth\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,10 +102,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\brije\\AppData\\Local\\Temp\\.vsdbgsrc\\c419dad7302b3e96c2c38cca4039887fbe745db760d3004f23d2549a94084090\\AuthenticationOptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\views\\admin\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|solutionrelative:views\\admin\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8F1F31A-EF68-208F-927F-20F20B40CE40}|Pos.csproj|c:\\users\\brije\\documents\\github\\rss\\pos_admin\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -115,11 +123,216 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "Views\\Account\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T18:35:18.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T18:34:48.399Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T18:36:42.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABAAAAB5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T18:27:21.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Services.cshtml",
+              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Admin\\Services.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Services.cshtml",
+              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Admin\\Services.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Services.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T11:23:47.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-20T19:07:42.416Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\SalesPersons\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\SalesPersons\\Index.cshtml",
+              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\SalesPersons\\Index.cshtml",
+              "RelativeToolTip": "Views\\SalesPersons\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T11:09:21.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditService.cshtml",
+              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Admin\\EditService.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\EditService.cshtml",
+              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Admin\\EditService.cshtml",
+              "RelativeToolTip": "Views\\Admin\\EditService.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T20:21:46.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAYwBoAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T18:29:28.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EditSale.cshtml",
+              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Admin\\EditSale.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\EditSale.cshtml",
+              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Admin\\EditSale.cshtml",
+              "RelativeToolTip": "Views\\Admin\\EditSale.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADUAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-11T17:37:21.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-09T10:49:51.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\SalesPersons\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\SalesPersons\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\SalesPersons\\Edit.cshtml",
+              "RelativeToolTip": "Views\\SalesPersons\\Edit.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACcAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T11:11:42.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\SalesPersons\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\SalesPersons\\Details.cshtml",
+              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\SalesPersons\\Details.cshtml",
+              "RelativeToolTip": "Views\\SalesPersons\\Details.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T19:18:44.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\SalesPersons\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\SalesPersons\\Create.cshtml",
+              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\SalesPersons\\Create.cshtml",
+              "RelativeToolTip": "Views\\SalesPersons\\Create.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAB8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T19:04:54.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-29T17:59:23.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Migrator.cs",
+              "DocumentMoniker": "C:\\Users\\brije\\AppData\\Local\\Temp\\.vsdbgsrc\\7b4498bb24a543f1227d79074785810b39cafe806f222fba8f36d46984fa78df\\Migrator.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\7b4498bb24a543f1227d79074785810b39cafe806f222fba8f36d46984fa78df\\Migrator.cs",
+              "ToolTip": "C:\\Users\\brije\\AppData\\Local\\Temp\\.vsdbgsrc\\7b4498bb24a543f1227d79074785810b39cafe806f222fba8f36d46984fa78df\\Migrator.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\7b4498bb24a543f1227d79074785810b39cafe806f222fba8f36d46984fa78df\\Migrator.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAIwKYAAAAEAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T09:24:11.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAYwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T18:13:32.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "SalesPersonsController.cs",
               "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Controllers\\SalesPersonsController.cs",
               "RelativeDocumentMoniker": "Controllers\\SalesPersonsController.cs",
@@ -131,72 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAACgAAAAAAAAAAAAYwDIAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-29T18:29:28.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAYwFkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T18:13:32.924Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\SalesPersons\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\SalesPersons\\Create.cshtml",
-              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\SalesPersons\\Create.cshtml",
-              "RelativeToolTip": "Views\\SalesPersons\\Create.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAB8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-10T19:04:54.988Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\SalesPersons\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\SalesPersons\\Index.cshtml",
-              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\SalesPersons\\Index.cshtml",
-              "RelativeToolTip": "Views\\SalesPersons\\Index.cshtml",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-09T11:09:21.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\SalesPersons\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\SalesPersons\\Details.cshtml",
-              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\SalesPersons\\Details.cshtml",
-              "RelativeToolTip": "Views\\SalesPersons\\Details.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-14T19:18:44.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
               "Title": "SalesPerson.cs",
               "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Models\\SalesPerson.cs",
               "RelativeDocumentMoniker": "Models\\SalesPerson.cs",
@@ -204,38 +352,11 @@
               "RelativeToolTip": "Models\\SalesPerson.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAA5wBIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T18:31:09.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T18:31:09.531Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAANgAAAAAAAAAAAAcwOoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-29T18:36:42.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAADAAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-29T18:27:21.035Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "SqlInternalConnection.cs",
               "DocumentMoniker": "C:\\Users\\brije\\AppData\\Local\\Temp\\.vsdbgsrc\\cc25e1b94d58131fa8227b046693f04ef6d0b2ad5a94c9817fe19931d9de7b39\\SqlInternalConnection.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\cc25e1b94d58131fa8227b046693f04ef6d0b2ad5a94c9817fe19931d9de7b39\\SqlInternalConnection.cs",
@@ -248,19 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EditSale.cshtml",
-              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Admin\\EditSale.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\EditSale.cshtml",
-              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Admin\\EditSale.cshtml",
-              "RelativeToolTip": "Views\\Admin\\EditSale.cshtml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-11T17:37:21.263Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
@@ -272,32 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\SalesPersons\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\SalesPersons\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\SalesPersons\\Edit.cshtml",
-              "RelativeToolTip": "Views\\SalesPersons\\Edit.cshtml",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAACMAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-09T11:11:42.596Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Migrator.cs",
-              "DocumentMoniker": "C:\\Users\\brije\\AppData\\Local\\Temp\\.vsdbgsrc\\7b4498bb24a543f1227d79074785810b39cafe806f222fba8f36d46984fa78df\\Migrator.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\7b4498bb24a543f1227d79074785810b39cafe806f222fba8f36d46984fa78df\\Migrator.cs",
-              "ToolTip": "C:\\Users\\brije\\AppData\\Local\\Temp\\.vsdbgsrc\\7b4498bb24a543f1227d79074785810b39cafe806f222fba8f36d46984fa78df\\Migrator.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\7b4498bb24a543f1227d79074785810b39cafe806f222fba8f36d46984fa78df\\Migrator.cs [Read Only]",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAIwJ0AAAAAAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T09:24:11.85Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
@@ -309,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -321,43 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-29T17:59:23.52Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-09T10:49:51.419Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "Services.cshtml",
-              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Admin\\Services.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Services.cshtml",
-              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Admin\\Services.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Services.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADcAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-09T11:23:47.203Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
               "Title": "LoginVm.cs",
               "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Models\\Auth\\LoginVm.cs",
               "RelativeDocumentMoniker": "Models\\Auth\\LoginVm.cs",
@@ -369,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
@@ -381,31 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-10T18:34:48.399Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AccessDenied.cshtml",
-              "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Account\\AccessDenied.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\AccessDenied.cshtml",
-              "ToolTip": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Views\\Account\\AccessDenied.cshtml",
-              "RelativeToolTip": "Views\\Account\\AccessDenied.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-10T18:35:18.371Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "AuthenticationOptions.cs",
               "DocumentMoniker": "C:\\Users\\brije\\AppData\\Local\\Temp\\.vsdbgsrc\\c419dad7302b3e96c2c38cca4039887fbe745db760d3004f23d2549a94084090\\AuthenticationOptions.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\c419dad7302b3e96c2c38cca4039887fbe745db760d3004f23d2549a94084090\\AuthenticationOptions.cs",
@@ -417,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "20251028191315_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Data\\Migrations\\20251028191315_InitialCreate.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20251028191315_InitialCreate.cs",
@@ -429,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Service.cs",
               "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\Models\\Service.cs",
               "RelativeDocumentMoniker": "Models\\Service.cs",
@@ -441,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": ".env",
               "DocumentMoniker": "C:\\Users\\brije\\Documents\\GitHub\\RSS\\Pos_admin\\.env",
               "RelativeDocumentMoniker": ".env",

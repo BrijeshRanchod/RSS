@@ -25,7 +25,7 @@
 
     <div class="mb-3">
         <label asp-for="SalesPersonId" class="form-label">Sales Person</label>
-        <select asp-for="SalesPersonId" class="form-select svc">
+        <select asp-for="SalesPersonId" class="form-select svc bg-dark text-white">
             <option value="">-- Select sales person --</option>
             @foreach (var sp in Model.SalesPeople)
             {
@@ -38,16 +38,16 @@
     </div>
 
 
-    <table class="table">
+    <table class="table table-dark">
         <thead>
             <tr>
                 <th style="width:30%">Service</th>
                 <th style="width:10%">Qty</th>
-                <th style="width:20%">Unit Price</th>
-                <th style="width:20%">Line Total</th>
-                <th style="width:10%">Remove</th>
-                <th style="width:10%">
-                    <button type="button" id="addLine" class="btn btn-success">Add Item</button>
+                <th style="width:15%">Unit Price</th>
+                <th style="width:10%">Line Total</th>
+                <th style="width:2%"></th>
+                <th style="width:5%">
+                    <button type="button" id="addLine" class="btn btn-success">+</button>
                 </th>
             </tr>
         </thead>
@@ -56,7 +56,7 @@
         {
             <tr>
                 <td>
-                    <select class="form-select svc"
+                    <select class="form-select svc bg-dark text-white"
                             name="Lines[@i].ServiceId"
                             data-index="@i">
                         <option value="">-- select --</option>
@@ -70,13 +70,13 @@
                     </select>
                 </td>
                 <td>
-                    <input type="number" min="1" class="form-control qty"
+                        <input type="number" min="1" class="form-control qty bg-dark text-white"
                            name="Lines[@i].Quantity"
                            value="@Model.Lines[i].Quantity"
                            data-index="@i" />
                 </td>
 <td>
-  <input type="text" class="form-control price"
+                        <input type="text" class="form-control price bg-dark text-white"
          value="@Model.Lines[i].UnitPrice.ToString("0.00", za)"
          data-index="@i" readonly />
 </td>

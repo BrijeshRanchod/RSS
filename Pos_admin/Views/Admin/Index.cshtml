@@ -24,38 +24,37 @@
 <form method="get" class="mb-3 row g-2 align-items-end">
   <div class="col-sm-4">
     <label class="form-label">Search</label>
-    <input name="q" value="@q" class="form-control" placeholder="Search by salesperson or item..." />
+    <input name="q" value="@q" class="form-control text-white bg-dark placeholder-glows" placeholder="Search by salesperson or item..." />
   </div>
     @if (User.IsInRole("Admin"))
         {
-            <div class="col-sm-3">
+            <div class="col-sm-2">
                 <label class="form-label">Start date</label>
-                <input type="date" name="startDate" value="@startDateVal" class="form-control" />
+                <input type="date" name="startDate" value="@startDateVal" class="form-control text-white bg-dark" />
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-2">
                 <label class="form-label">End date</label>
-                <input type="date" name="endDate" value="@endDateVal" class="form-control" />
+                <input type="date" name="endDate" value="@endDateVal" class="form-control text-white bg-dark" />
             </div>
         }
-        <div class="col-sm-2 d-flex gap-2">
+        <div class="col-sm-3 d-flex gap-2">
     <button class="btn btn-primary flex-grow-1">Apply</button>
-    <a class="btn btn-outline-secondary" asp-action="Index">Clear</a>
-  </div>
-    <div class="col-sm-3 d-flex gap-2">
-        <a class="btn btn-outline-dark"
+    <a class="btn btn-outline-light text-white" asp-action="Index">Clear Filters</a>
+        <a class="btn btn-outline-light text-white"
            asp-action="ExportSalesPdf"
            asp-route-q="@q"
            asp-route-startDate="@startDateVal"
            asp-route-endDate="@endDateVal"
            asp-route-pageSize="@pageSize">
-            Download
+            Print
         </a>
-    </div>
+  </div>
+
 </form>
 
 
 
-<table class="table table-striped align-middle">
+<table class="table table-striped align-middle table-dark">
   <thead>
     <tr>
       <th>#</th>

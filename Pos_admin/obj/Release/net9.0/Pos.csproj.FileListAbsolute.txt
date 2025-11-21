@@ -720,7 +720,6 @@ C:\Users\brije\Documents\GitHub\RSS\Pos_admin\bin\Release\net9.0\LatoFont\Lato-S
 C:\Users\brije\Documents\GitHub\RSS\Pos_admin\bin\Release\net9.0\LatoFont\Lato-Thin.ttf
 C:\Users\brije\Documents\GitHub\RSS\Pos_admin\bin\Release\net9.0\LatoFont\Lato-ThinItalic.ttf
 C:\Users\brije\Documents\GitHub\RSS\Pos_admin\bin\Release\net9.0\LatoFont\OFL.txt
-C:\Users\brije\Documents\GitHub\RSS\Pos_admin\obj\Release\net9.0\compressed\277gma359c-{0}-1q91w999mg-1q91w999mg.gz
 C:\Users\brije\Documents\GitHub\RSS\Pos_admin\obj\Release\net9.0\compressed\1c9f1r8qye-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\brije\Documents\GitHub\RSS\Pos_admin\obj\Release\net9.0\compressed\ljw0m3ts57-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\brije\Documents\GitHub\RSS\Pos_admin\obj\Release\net9.0\compressed\p4ag8zf227-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -782,6 +781,7 @@ C:\Users\brije\Documents\GitHub\RSS\Pos_admin\obj\Release\net9.0\compressed\sgnd
 C:\Users\brije\Documents\GitHub\RSS\Pos_admin\obj\Release\net9.0\compressed\c7qg7hs9ls-{0}-muycvpuwrr-muycvpuwrr.gz
 C:\Users\brije\Documents\GitHub\RSS\Pos_admin\obj\Release\net9.0\compressed\3v5isrbvut-{0}-87fc7y1x7t-87fc7y1x7t.gz
 C:\Users\brije\Documents\GitHub\RSS\Pos_admin\obj\Release\net9.0\compressed\jwupd0k9fi-{0}-mlv21k5csn-mlv21k5csn.gz
-C:\Users\brije\Documents\GitHub\RSS\Pos_admin\obj\Release\net9.0\compressed\6yo9cspzx2-{0}-xs2rjn2jen-xs2rjn2jen.gz
-C:\Users\brije\Documents\GitHub\RSS\Pos_admin\obj\Release\net9.0\compressed\bf9uhxb51e-{0}-xs2rjn2jen-xs2rjn2jen.gz
 C:\Users\brije\Documents\GitHub\RSS\Pos_admin\obj\Release\net9.0\swae.build.ex.cache
+C:\Users\brije\Documents\GitHub\RSS\Pos_admin\obj\Release\net9.0\compressed\6yo9cspzx2-{0}-4zj5c2s94h-4zj5c2s94h.gz
+C:\Users\brije\Documents\GitHub\RSS\Pos_admin\obj\Release\net9.0\compressed\bf9uhxb51e-{0}-4zj5c2s94h-4zj5c2s94h.gz
+C:\Users\brije\Documents\GitHub\RSS\Pos_admin\obj\Release\net9.0\compressed\277gma359c-{0}-wfapc5il7w-wfapc5il7w.gz

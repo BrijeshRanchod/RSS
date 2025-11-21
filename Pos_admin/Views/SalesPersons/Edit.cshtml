@@ -17,28 +17,29 @@
 
             <div class="mb-3">
                 <label asp-for="Person" class="form-label"></label>
-                <input asp-for="Person" class="form-control" />
+                <input asp-for="Person" class="form-control bg-dark text-white" />
                 <span asp-validation-for="Person" class="text-danger"></span>
             </div>
 
             <div class="mb-3">
                 <label asp-for="Email" class="form-label"></label>
-                <input asp-for="Email" class="form-control" />
+                <input asp-for="Email" class="form-control bg-dark text-white" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
 
             <div class="mb-3">
                 <label asp-for="Role" class="form-label"></label>
                 <select asp-for="Role"
-                        class="form-select"
+                        class="form-select bg-dark text-white"
                         asp-items="Html.GetEnumSelectList<Pos.Models.SalesRole>()">
                     <option value="">-- Select role --</option>
                 </select>
                 <span asp-validation-for="Role" class="text-danger"></span>
             </div>
 
+            <a asp-action="Index" class="btn btn-dark text-decoration-none">Back to List</a>
+
             <button type="submit" class="btn btn-primary">Save</button>
-            <a asp-action="Index" class="btn btn-link">Back to List</a>
         </form>
     </div>
 </div>
